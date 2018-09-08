@@ -1,0 +1,21 @@
+.header-mobile {
+    height: 60px;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.header-mobile__block {
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.header-mobile__block span {
+    width: 40px;
+    height: 40px;
+    margin: 0px auto;
+    border: 5px solid white;
+    border-radius: 5px;
+}

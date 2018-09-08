@@ -1,0 +1,16 @@
+{
+    "buttonData": [
+        {
+            "type": "clock"
+        },
+        {
+            "type": "test"
+        },
+        {
+            "type": "clock"
+        },
+        {
+            "type": "test"
+        }
+    ]
+}
