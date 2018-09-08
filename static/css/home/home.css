@@ -1,0 +1,7 @@
+.body__home {
+    margin-top: 1em;
+}
+
+.header-mobile:hover ~ .body__home{
+    animation: onClickButtonHeaderMobile 200ms ease-in-out forwards;
+}

@@ -5,7 +5,8 @@
 }
 
 .icon-clock,
-.test {
+.test
+ {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -13,11 +14,11 @@
 }
 
 .icon-clock {
-    background-image: url("https://png.icons8.com/windows/40/c50105/alarm-clock.png");
+    background: url("https://png.icons8.com/windows/40/c50105/alarm-clock.png");
 }
 
 .test {
-    background-image: url("/static/images/me.jpg");
+    background: url("../../me.jpg");
 }
 
 @keyframes onClickButtonHeaderMobile {
