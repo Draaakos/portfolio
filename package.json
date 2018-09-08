@@ -1,0 +1,59 @@
+{
+  "name": "market",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "npm run assets & cross-env NODE_ENV=production NODE_PATH=. node ./bin/www.js",
+    "start:dev": "npm run assets & cross-env NODE_PATH=. nodemon ./bin/www.js",
+    "webpack": "rm -rf ./dist/js && npm run webpack:development",
+    "webpack:development": "webpack --watch --progress --colors --env.development",
+    "webpack:watch": "npm run webpack --progresss --colors --watch --env.development",
+    "webpack:production": "npm run assets:production && cross-env NODE_ENV=production webpack -p --colors --progress --env.production",
+    "database:init": "knex migrate:make setup",
+    "database:apply": "knex migrate:latest",
+    "assets:production": "rimraf dist && mkdir dist",
+    "assets": "cp -r static/css static/images static/fonts dist/",
+    "lint:js": "eslint --color --ext .js,.jsx ./static/js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-es2016": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "body-parser": "^1.18.2",
+    "classnames": "^2.2.5",
+    "cross-env": "^5.1.4",
+    "css-loader": "^0.28.4",
+    "express": "^4.16.2",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^0.11.2",
+    "laravel-mix": "^1.2.0",
+    "nodemon": "^1.17.5",
+    "nunjucks": "^3.1.3",
+    "postcss-loader": "^2.0.6",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-hot-loader": "^4.3.3",
+    "style-loader": "^0.18.2",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "vue-loader": "^13.0.1",
+    "webpack": "^3.2.0",
+    "webpack-build-notifier": "^0.1.23",
+    "webpack-cli": "^3.0.8"
+  },
+  "devDependencies": {}
+}
