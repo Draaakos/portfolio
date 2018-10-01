@@ -15,7 +15,8 @@
     "assets:production": "rimraf dist && mkdir dist",
     "assets:copy": "cp -r static/css static/images static/fonts dist/",
     "assets": "rimraf static/css & cp -r dist/css static & cp -r static/css static/tools static/images static/fonts dist/",
-    "lint:js": "eslint --color --ext .js,.jsx ./static/js"
+    "lint:js": "eslint --color --ext .js,.jsx ./static/js",
+    "build": "npm run start:dev & npm run webpack:watch"
   },
   "repository": {
     "type": "git",

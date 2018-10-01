@@ -1,0 +1,12 @@
+{
+  "technologies": [
+    {
+      "name": "Node",
+      "url": "https://png.icons8.com/color/50/000000/nodejs.png"
+    },
+    {
+      "name": "React",
+      "url": "https://png.icons8.com/ios/50/000000/react-native-filled.png"
+    }
+  ]
+}
